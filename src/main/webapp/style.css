@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@charset "UTF-8";
+/* Reset cơ bản */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  }
+
+/* Header và thanh trạng thái */
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #004080;
+padding: 10px 50px;
+}
+
+header .logo img {
+height: 60px;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+gap: 20px;
+}
+
+nav ul li a {
+color: white;
+text-decoration: none;
+padding: 8px 15px;
+border-radius: 5px;
+transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+background-color: #0066cc;
+}
+
+nav ul li a.login-btn {
+background-color: #ff6600;
+font-weight: bold;
+}
+
+nav ul li a.login-btn:hover {
+background-color: #ff8533;
+}
+
+/* Banner hình ảnh */
+.banner img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+/* Main nội dung */
+main {
+padding: 50px;
+text-align: center;
+}
+
+main h1 {
+font-size: 36px;
+margin-bottom: 20px;
+}
+
+main p {
+font-size: 18px;
+}
+
+/* Footer Styles */
+#footer {
+  background-color: #333; /* Màu nền tối */
+  color: white;
+  padding: 40px 50px 20px; /* Padding trên dưới và hai bên */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around; /* Chia đều không gian giữa các cột */
+  flex-wrap: wrap; /* Cho phép xuống dòng trên màn hình nhỏ */
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  flex: 1; /* Mỗi phần chiếm một phần bằng nhau */
+  min-width: 250px; /* Đảm bảo không quá nhỏ */
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  color: #00ffcc; /* Màu tiêu đề nổi bật */
+  border-bottom: 2px solid #00ffcc;
+  padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  color: #cccccc; /* Màu liên kết nhẹ hơn */
+  text-decoration: none;
+  transition: color 0.3s;
+  display: block; /* Mỗi liên kết một dòng */
+  padding: 3px 0;
+}
+
+.footer-section ul li a:hover {
+  color: #ffffff; /* Sáng hơn khi hover */
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #555; /* Đường kẻ phân cách */
+  font-size: 14px;
+  color: #aaa;
+}
